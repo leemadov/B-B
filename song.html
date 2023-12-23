@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base64 Audio Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Base64 Audio Player</h1>
+    
+    <div class="file-input">
+      <input type="file" id="fileInput" accept=".mp3,.wav" onchange="handleFile()">
+    </div>
+    
+    <div class="binary-output">
+      <h2>Base64 Output:</h2>
+      <textarea id="base64Song" rows="10" cols="50"></textarea>
+      <button onclick="playBase64()">Play Base64 Song</button>
+    </div>
+  </div>
+
+  <script src="song.js"></script>
+</body>
+</html>

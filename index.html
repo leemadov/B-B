@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Binary Code Interpreter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Binary Code Interpreter</h1>
+    
+    <div class="text-to-binary">
+      <label for="textInput">Enter a word:</label>
+      <input type="text" id="textInput" placeholder="Enter a word">
+      <button onclick="textToBinary()">Translate to Binary</button>
+      <div class="output-section">
+        <p id="binaryOutput"></p>
+        <button onclick="copyBinaryToClipboard()">Copy Binary to Clipboard</button>
+      </div>
+    </div>
+
+    <div class="binary-to-text">
+      <h2>Binary to Text</h2>
+      <textarea id="binaryInput" rows="4" cols="50" placeholder="Enter binary code"></textarea>
+      <button onclick="binaryToText()">Run</button>
+      <p id="textOutput"></p>
+      <a href="song.html">song file to base64</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
