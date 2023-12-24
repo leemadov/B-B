@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base64 Video Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <a href="index.html">back to home page</a>
+    <h1>Base64 Video Converter</h1>
+    
+    <div class="file-input">
+      <input type="file" id="fileInput" accept=".mp4,.webm,.ogg" onchange="handleFile()">
+    </div>
+    
+    <div class="binary-output">
+      <h2>Base64 Output:</h2>
+      <textarea id="base64Video" rows="10" cols="50"></textarea>
+      <button onclick="displayVideo()">Display Video</button>
+    </div>
+
+    <div class="video-container">
+      <video id="displayVideo" controls></video>
+    </div>
+  </div>
+
+  <script src="vid.js"></script>
+</body>
+</html>

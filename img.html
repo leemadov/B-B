@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base64 Image Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <a href="index.html">back to home page</a>
+    <h1>Base64 Image Converter</h1>
+    
+    <div class="file-input">
+      <input type="file" id="fileInput" accept="image/*" onchange="handleFile()">
+    </div>
+    
+    <div class="binary-output">
+      <h2>Base64 Output:</h2>
+      <textarea id="base64Image" rows="10" cols="50"></textarea>
+      <button onclick="displayImage()">Display Image</button>
+    </div>
+
+    <div class="image-container">
+      <img id="displayImage" alt="Image">
+    </div>
+  </div>
+
+  <script src="img.js"></script>
+</body>
+</html>
